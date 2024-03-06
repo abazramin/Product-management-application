@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(199, 198, 198);
+    color: black;
+    font-family: sans-serif;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background: #d8d7d7;
+    border: none;
+    margin: 5px 0;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input:focus {
+    background: #949393;
+    color: black;
+    /* transform: scaleX(1.1); */
+}
+
+.price input {
+    margin: 0px 2px;
+    width: 20%;
+}
+
+#total {
+    background: red;
+    padding: 4px 5px;
+    border-radius: 4px;
+}
+
+#total::before {
+    content: "الاجمالي:";
+}
+
+button {
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: all .45s ease;
+}
+
+button:hover {
+    background: rgb(179, 54, 54);
+    letter-spacing: 1px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-search button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+#deleteAll {
+    margin: 20px 0;
+}
